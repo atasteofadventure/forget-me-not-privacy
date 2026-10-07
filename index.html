@@ -28,7 +28,7 @@
       .summary { padding: 24px; margin: 28px 0 34px; border: 1px solid #d6dece; border-radius: 16px; background: #f0f3e9; }
       .summary p:last-child { margin-bottom: 0; }
       section { scroll-margin-top: 24px; }
-      #support { margin-top: 48px; padding-top: 8px; border-top: 1px solid #d6dece; }
+      #music-credits, #support { margin-top: 48px; padding-top: 8px; border-top: 1px solid #d6dece; }
       footer { margin-top: 52px; padding-top: 20px; border-top: 1px solid #d6dece; }
       @media (max-width: 440px) { main { padding: 36px 20px 48px; } .summary { padding: 20px; } }
       @media print { body { background: white; } main { max-width: none; padding: 0; } nav { display: none; } }
@@ -40,10 +40,11 @@
         <div class="brand">Forget Me Not</div>
         <h1>Privacy &amp; support</h1>
         <p>A little care for your friendships. A clear explanation of your data.</p>
-        <p class="date">Privacy policy · Effective October 2, 2026</p>
+        <p class="date">Privacy policy · Updated October 7, 2026</p>
         <nav aria-label="Page sections">
           <a href="#privacy">Privacy policy</a>
           <a href="#your-choices">Your choices</a>
+          <a href="#music-credits">Music credits</a>
           <a href="#support">Get support</a>
         </nav>
       </header>
@@ -59,11 +60,16 @@
         <p>The app saves information you enter and information needed to make your garden work:</p>
         <ul>
           <li>Your name and the names and birthdays you enter for friends.</li>
+          <li>For contacts you choose to link: their device contact identifier, display name, chosen phone number and number label. If available, their birthday's month and day are saved as the friend's birthday for reminders.</li>
           <li>Friendship check-in intervals, check-in dates and history, notes, and note follow-up dates.</li>
           <li>Garden progress, plant choices and positions, and unlocked plants.</li>
           <li>Your settings, reminder choices and scheduling history, and which friendship facts you have seen.</li>
         </ul>
-        <p>This information is used on your device to display your garden, keep your notes, calculate progress, and schedule reminders. The app does not access your address book or location. We do not sell your information or share your garden data with advertising or analytics services.</p>
+        <p>This information is used on your device to display your garden, keep your notes, calculate progress, schedule reminders and open a text to a linked friend. The app does not access your location. We do not sell your information or share your garden data with advertising or analytics services.</p>
+
+        <h2>Optional contact linking</h2>
+        <p>Choose Link in a friend's pane to select one contact and a phone number. The iPhone contact picker does not require permission to read your address book; Android requires Contacts permission. The app keeps only the selected contact details listed above on your device. It does not import your address book or change your device contacts. You can change or unlink the selection in the friend's pane. The saved number is a snapshot; choose the contact again if their number changes.</p>
+        <p>Tapping a notification for a linked friend opens your messaging app with the saved number as the recipient and records a watering once Messages opens. You decide whether to send a message. The app cannot confirm sending, so the watering remains even if you cancel the message. If Messages cannot open, no watering is recorded. Without a linked number, a notification opens the friend's pane. Your messaging provider handles any message you choose to send.</p>
 
         <h2>Optional voice dictation</h2>
         <p>If you choose to dictate a note, the app requests microphone and speech-recognition permission. Apple's speech-recognition service processes your speech and may send audio and related recognition data to Apple, depending on the device, language, and system settings. Apple's handling of this information is covered by its <a href="https://www.apple.com/legal/privacy/">privacy policy</a>.</p>
@@ -79,7 +85,7 @@
         <h2 id="your-choices">Your choices and deleting data</h2>
         <ul>
           <li>You can change a friend's reminder interval and birthday, and delete individual notes.</li>
-          <li>Removing a friend's plant also deletes that friend's notes and check-in history from the app.</li>
+          <li>You can unlink a contact from a friend's pane. Removing a friend's plant also deletes that friend's linked contact, notes and check-in history from the app. Your device contacts are not deleted.</li>
           <li><strong>Settings → Delete my garden</strong> erases the garden, profile, notes, history, and preferences stored by this app on this device, and requests removal of its pending and delivered notifications.</li>
           <li>You can turn off reminders in the app and revoke notification, microphone, or speech-recognition permission in device Settings.</li>
         </ul>
@@ -95,6 +101,23 @@
 
         <h2>Changes to this policy</h2>
         <p>We will update this page and its effective date when our privacy practices change. If a future release introduces accounts, cloud services, or new data uses, we will explain those changes and request any required permissions before you use those features.</p>
+      </section>
+
+      <section id="music-credits" aria-labelledby="music-credits-heading">
+        <h2 id="music-credits-heading">Music credits</h2>
+        <p>Thank you to the artists whose music plays in the garden. Each title links to its source on OpenGameArt:</p>
+        <ul>
+          <li><a href="https://opengameart.org/content/happy-clappy-loop">Happy Clappy Loop</a> — OwlishMedia.</li>
+          <li><a href="https://opengameart.org/content/chill-lofi-inspired-loop-edit">Chill lofi inspired [loop edit]</a> — music by omfgdude; seamless loop edit by qubodup.</li>
+          <li><a href="https://opengameart.org/content/snow-theme">Snow Theme / Through the Snow</a> — Cleyton Kauffman.</li>
+          <li><a href="https://opengameart.org/content/lofi-again">Lofi again</a> — omfgdude.</li>
+          <li><a href="https://opengameart.org/content/since-2-am">Since 2 A.M.</a> — TAD.</li>
+          <li><a href="https://opengameart.org/content/ferviver">Ferviver</a> — cinameng (James Gargette).</li>
+          <li><a href="https://opengameart.org/content/velo">VELO</a> — cinameng (James Gargette).</li>
+          <li><a href="https://opengameart.org/content/summer-park-8bit-tune-loop">Summer Park - 8bit tune (loop)</a> — Scribe (Daniel Stephens).</li>
+          <li><a href="https://opengameart.org/content/i-think-id-stay-jungle-chill">I think I'd stay (jungle chill)</a> — Emmntt.</li>
+        </ul>
+        <p>The dawn music was composed for Forget Me Not.</p>
       </section>
 
       <section id="support" aria-labelledby="support-heading">
